@@ -5,8 +5,12 @@ the services (LXD, Bare-metal) allocation from an Charmed OpenStack Cloud.
 
 ## Installation
 
+    $ pip install service-allocation
+
+<!-- Comming Soon
     $ sudo snap install service-allocation --classic
 
+-->
 ## Usage
 
     $ juju status --format yaml > status.yaml
