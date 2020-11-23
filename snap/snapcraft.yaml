@@ -1,0 +1,23 @@
+---
+name: service-allocation
+version: git
+base: core18
+summary: Generates a CSV with the services allocation of an OpenStack Cloud.
+
+description: |
+    A simple utility that generates a CSV file containing the services (LXD,
+    Bare-metal) allocation from an Charmed OpenStack Cloud.
+grade: stable
+confinement: classic
+
+parts:
+  service-allocation:
+    plugin: python
+    python-version: python3
+    source: .
+    stage-packages:
+      - python-six
+
+apps:
+  service-allocation:
+    command: bin/service-allocation
