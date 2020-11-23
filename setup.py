@@ -16,7 +16,7 @@ setup(
     platforms=['any'],
     author='Marcelo Subtil Marcal',
     author_email='marcelo.marcal@canonical.com',
-    url='',
+    url='https://github.com/msmarcal/service_allocation',
     license='MIT',
     py_modules=['service_allocation'],
     packages=['service_allocation'],
